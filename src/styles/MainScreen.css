@@ -1,0 +1,217 @@
+/* General Reset */
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* App Container */
+  .app {
+    display: flex;
+    /* height: 100vh; */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: #ffffff;
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .menu li:hover {
+    color: #007bff;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px ;
+    background-color: #ffffff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #D5D7DA;
+  }
+  
+  .header h2 {
+    margin: 0;
+  }
+  .repo-tag{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* align-items: center; */
+  }
+  .repo-tag > span {
+    font-size: 14px;
+    color: #555;
+  }
+  .actions {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .action-buttons{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .refresh , .add{
+    background-color: #ffffff;
+    border: 1px solid #D5D7DA;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .add {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  
+  .search-container {
+    margin-top: 25px;
+    position: relative;
+    width: 100%; 
+    max-width: 400px;
+  }
+  
+  .search-logo {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    /* width: 20px; 
+    height: 20px; */
+    pointer-events: none;
+  }
+  
+  .search-input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .search-input::placeholder {
+    color: #414651; 
+    font-size: 14px;
+    padding: 10px 40px;
+  
+  }
+  
+  
+  /* Repository List */
+  .repository-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  
+  .repository-card {
+    border: 1px solid #D5D7DA;
+    /* border-radius: 5px; */
+    padding: 24px 15px ;
+  }
+  .repository-card:hover {
+    background-color: #F5F5F5;
+  }
+  
+  .repo-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "Inter", serif;
+  }
+  
+  .repo-info > p {
+    font-size: 20px;
+    color: #181D27;
+    font-weight: 600;
+  }
+  
+  .badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #175CD3;
+    border: 1px solid #175CD3;
+    background-color: #EFF8FF;
+  }
+  
+  
+  .repository-card p {
+    display: flex;
+    flex : row;
+    gap: 40px;
+    align-items: center;
+    margin: 5px 0 0;
+  }
+  .repository-card p span {
+    font-size: 14px;
+    color: #181D27;
+  }
+  
+  .blue-dot{
+    height: 7px;
+    width: 7px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .storage-icon{
+    display: inline-block;
+    margin-right: 8px;
+    margin-top: 2px;
+  }
+  
+  
+  
+  @media (max-width: 800px) {
+  .header > .actions{
+    flex-wrap: wrap;
+  }
+  }

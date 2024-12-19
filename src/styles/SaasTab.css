@@ -1,0 +1,55 @@
+.saas-tab-container {
+    width: 100%;
+  }
+  
+  .saas-login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px 24px;
+  }
+  
+  .saas-login-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.875rem;
+    color: #374151;
+  }
+  
+  .saas-login-btn:hover {
+    background-color: #f9fafb;
+  }
+  
+  .saas-provider-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .saas-provider-icon.bitbucket {
+    color: #2684ff;
+  }
+  
+  .saas-provider-icon.azure {
+    color: #0078d4;
+  }
+  
+  .saas-provider-icon.gitlab {
+    color: #fc6d26;
+  }
+  
+  /* Media Query for mobile devices */
+  @media (max-width: 800px) {
+    .saas-login-buttons {
+      padding: 16px 20px;
+    }
+  }
+  
