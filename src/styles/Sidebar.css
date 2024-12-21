@@ -14,7 +14,7 @@
   z-index: 1000;
 }
 .sidebar.open {
-  top: -500px;
+  top: -550px;
 }
 
 .sidebar-logo {
